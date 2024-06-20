@@ -1,2 +1,18 @@
+$background-color: #343434
+
+@mixin showBorder($border-color: black)
+  border: 1px solid $border-color
+
 body
   margin: 0
+  background-color: $background-color
+  display: flex
+  justify-content: center
+
+#center-container
+  width: 100rem
+  height: 60rem
+  margin-top: 10rem
+  @include showBorder
+  
+
