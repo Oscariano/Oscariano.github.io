@@ -6,6 +6,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
+  <link rel="stylesheet" href="./node_modules/rivet-icons/dist/rivet-icon-element.css" />
 </svelte:head>
 
 {@render children()}
