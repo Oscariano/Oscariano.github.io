@@ -14,9 +14,12 @@ const config = {
     paths: {
       // If your repo is "my-site", base should be "/my-site"
       // If it's your primary "username.github.io", leave as an empty string
-      base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+      base: process.env.NODE_ENV === 'production' ? '/MyX' : '',
+    },
+    prerender: {
+      handleHttpError: 'warn'
     }
-  }
+  },
 };
 
 export default config;

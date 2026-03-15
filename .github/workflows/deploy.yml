@@ -24,11 +24,14 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Going to go to myx
+        run: cd MyX
 
       - name: Build
         run: pnpm run build

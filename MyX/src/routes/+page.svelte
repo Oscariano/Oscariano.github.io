@@ -1,8 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import '../app.css';
-  import 'rivet-icons/dist/rivet-icon-element.css';
-
+  
   onMount(() => import('$lib/icons.js'));
 </script>
 
