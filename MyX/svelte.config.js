@@ -1,13 +1,22 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  preprocess: vitePreprocess(),
   kit: {
-    // adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-    // If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-    // See https://svelte.dev/docs/kit/adapters for more information about adapters.
-    adapter: adapter(),
-  },
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: '404.html', // Essential for SPA-like routing on GH Pages
+      strict: true
+    }),
+    paths: {
+      // If your repo is "my-site", base should be "/my-site"
+      // If it's your primary "username.github.io", leave as an empty string
+      base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+    }
+  }
 };
 
 export default config;
