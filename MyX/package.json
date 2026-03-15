@@ -12,6 +12,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
+    "@iconify/svelte": "^5.2.1",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.55.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.4",
@@ -24,13 +25,12 @@
   },
   "dependencies": {
     "@fontsource/jersey-10": "^5.2.8",
-    "@fontsource/pixelify-sans": "^5.2.7",
-    "@lucide/svelte": "^0.577.0",
     "@tailwindcss/vite": "^4.2.1",
-    "rivet-icons": "^3.0.1",
     "tailwindcss": "^4.2.1"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

@@ -1,13 +1,11 @@
-@import "rivet-icons/dist/rivet-icon-element.css";
 @import "tailwindcss";
 @import "@fontsource/jersey-10";
-@import "@fontsource/pixelify-sans";
 
 @theme {
-  --font-pixel: "Pixelify Sans", sans-serif;
   --font-jersey: "Jersey 10", sans-serif;
 }
 
 body {
   font-family: var(--font-jersey);
+  overflow-x: hidden;
 }

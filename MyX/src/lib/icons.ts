@@ -1,1 +1,0 @@
-import 'rivet-icons/dist/menu.js';
