@@ -29,5 +29,8 @@
     "@tailwindcss/vite": "^4.2.1",
     "rivet-icons": "^3.0.1",
     "tailwindcss": "^4.2.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
   }
 }
