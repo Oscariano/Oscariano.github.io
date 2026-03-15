@@ -23,6 +23,8 @@
     "vite": "^7.3.1"
   },
   "dependencies": {
+    "@fontsource/jersey-10": "^5.2.8",
+    "@fontsource/pixelify-sans": "^5.2.7",
     "@lucide/svelte": "^0.577.0",
     "@tailwindcss/vite": "^4.2.1",
     "rivet-icons": "^3.0.1",
