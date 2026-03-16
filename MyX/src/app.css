@@ -9,3 +9,9 @@ body {
   font-family: var(--font-jersey);
   overflow-x: hidden;
 }
+
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
