@@ -3,21 +3,29 @@
   import { onMount } from 'svelte';
 
   onMount(() => import('iconify-icon'));
+
+  import { fade } from 'svelte/transition';
+
+  let scrollY = 0;
+  const threshold = 100;
 </script>
 
-<nav class="w-full flex justify-start md:justify-end">
-  <span class="block md:hidden">
+<svelte:window bind:scrollY={scrollY} />
+
+<nav class="fixed top-0 left-0 w-full flex justify-start md:justify-end px-8 py-4">
+  <span class="md:hidden">
     <iconify-icon icon="pixelarticons:menu" width="2em" height="2em"></iconify-icon>
   </span>
   <ul class="hidden md:flex md:items-center md:gap-8 md:block md:text-xl lg:text-2xl">
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
+    <li><a href="/projects">Projects</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
 </nav>
 
-<section class="h-screen flex flex-col items-center">
-  <h3 class="md:self-start text-[clamp(1rem,8vw,4rem)] mt-10 text-[#707070]">Hello! This is,</h3>
+<section class="h-dvh flex flex-col items-center">
+  <h3 class="md:self-start text-[clamp(1rem,8vw,4rem)] mt-20 text-[#707070]">Hello! This is,</h3>
   <h1 class="md:self-start text-[clamp(4rem,36vw,16rem)] leading-[0.6]">Oscar</h1>
   <h2 class="md:self-start text-[clamp(2rem,16vw,8rem)] leading-[0.9]">Song</h2>
   
@@ -26,7 +34,27 @@
   <h3 class="self-start text-[clamp(1rem,6vw,2rem)] mt-25">+1 (206) 694-9786</h3>
   <h3 class="self-start text-[clamp(1rem,6vw,2rem)]">oscarsjs@uw.edu</h3>
   
-  <img src="/ascii_me.svg" alt="Profile" class="absolute top-65 right-2 md:right-10 w-70 z-[-1] lg:w-90 lg:top-45 lg:right-10">
+  <img src="/ascii_me.svg" alt="Profile" class="absolute bottom-0 right-2 md:right-10 w-auto h-[clamp(10rem,65vh,70rem)] z-[-1] lg:w-90 lg:h-auto lg:top-45 lg:right-10">
   
-  <iconify-icon icon="pixelarticons:arrow-big-down-dash-sharp" width="40" height="40" class="fixed bottom-3 self-center z-[-1] animate-bounce"></iconify-icon>
+  <div class="fixed bottom-6 self-center z-[-1] animate-bounce flex flex-col items-center" style:opacity="{Math.max(0, 1 - (scrollY / threshold))}">
+    <p class="leading-none">Scroll down</p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="currentColor"><path d="M8 3h8v2H8zm0 4h8v2H8z"/><path d="M8 7h2v4H8zm-5 4h5v2H3zm0 2h2v2H3zm2 2h2v2H5zm2 2h2v2H7zm2 2h2v2H9zm2 2h2v2h-2zm2-2h2v2h-2zm2-2h2v2h-2zm2-2h2v2h-2zm2-4h2v4h-2zm-3 0h3v2h-3zm-2-4h2v4h-2z"/></g></svg>
+
+  </div>
 </section>
+
+<section class="bg-[#E2DECE] px-10 py-6">
+  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">About</h1>
+  <p class="text-[clamp(1rem,6vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
+</section>
+
+<section class="bg-[#E2DECE] px-10 py-6 ">
+  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">Projects</h1>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
+      <h2 class="text-[clamp(1rem,6vw,1.5rem)]">Project 1</h2>
+      <p class="text-[clamp(1rem,6vw,1.5rem)]">Description of project 1</p>
+    </div>
+  </div>
+</section>
+
