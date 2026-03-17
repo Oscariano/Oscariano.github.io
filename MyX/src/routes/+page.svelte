@@ -1,10 +1,10 @@
 <script>
   import '../app.css';
   import { onMount } from 'svelte';
+  import CreationTile from '$lib/components/creation_tile.svelte';
+  import { creations } from '$lib/data/creations.js';
 
   onMount(() => import('iconify-icon'));
-
-  import { fade } from 'svelte/transition';
 
   let scrollY = 0;
   const threshold = 100;
@@ -12,7 +12,7 @@
 
 <svelte:window bind:scrollY={scrollY} />
 
-<nav class="fixed top-0 left-0 w-full flex justify-start md:justify-end px-8 py-4">
+<nav class="fixed top-0 left-0 w-full flex justify-start md:justify-end px-4 py-4">
   <span class="md:hidden">
     <iconify-icon icon="pixelarticons:menu" width="2em" height="2em"></iconify-icon>
   </span>
@@ -24,7 +24,7 @@
   </ul>
 </nav>
 
-<section class="h-dvh flex flex-col items-center">
+<section class="h-dvh flex flex-col items-center py-2 px-4 md:px-10">
   <h3 class="md:self-start text-[clamp(1rem,8vw,4rem)] mt-20 text-[#707070]">Hello! This is,</h3>
   <h1 class="md:self-start text-[clamp(4rem,36vw,16rem)] leading-[0.6]">Oscar</h1>
   <h2 class="md:self-start text-[clamp(2rem,16vw,8rem)] leading-[0.9]">Song</h2>
@@ -43,18 +43,30 @@
   </div>
 </section>
 
-<section class="bg-[#E2DECE] px-10 py-6">
-  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">About</h1>
-  <p class="text-[clamp(1rem,6vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
+<section class="px-4 md:px-10">
+  <section class="bg-[#E2DECE] px-4 py-6 shadow-[5px_5px_rgba(196,_186,_168,_0.4),_10px_10px_rgba(196,_186,_168,_0.3),_15px_15px_rgba(196,_186,_168,_0.2),_20px_20px_rgba(196,_186,_168,_0.1),_25px_25px_rgba(196,_186,_168,_0.05)]">
+    <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9] text-center md:text-left">About</h1>
+    <p class="text-[clamp(1rem,6vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
+  </section>
 </section>
 
-<section class="bg-[#E2DECE] px-10 py-6 ">
-  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">Projects</h1>
+<section class="px-4 md:px-10">
+  <section class="bg-[#E2DECE] px-4 py-6 shadow-[5px_5px_rgba(196,_186,_168,_0.4),_10px_10px_rgba(196,_186,_168,_0.3),_15px_15px_rgba(196,_186,_168,_0.2),_20px_20px_rgba(196,_186,_168,_0.1),_25px_25px_rgba(196,_186,_168,_0.05)]">
+    <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9] text-center md:text-left">Creations</h1>
+    <div class="flex flex-col gap-4">
+      {#each creations as creation}
+        <CreationTile title={creation.title} description={creation.description} url={creation.url} status={creation.status}/>
+      {/each}
+    </div>
+  </section>
+</section>
+
+<section class="mt-10 bg-[#E2DECE] px-10 py-6">
+  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">Blog</h1>
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-2">
-      <h2 class="text-[clamp(1rem,6vw,1.5rem)]">Project 1</h2>
-      <p class="text-[clamp(1rem,6vw,1.5rem)]">Description of project 1</p>
+      <h2 class="text-[clamp(1rem,6vw,1.5rem)]">Blog Post 1</h2>
+      <p class="text-[clamp(1rem,6vw,1.5rem)]">Description of blog post 1</p>
     </div>
   </div>
 </section>
-
