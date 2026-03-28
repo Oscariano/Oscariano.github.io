@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import CreationTile from '$lib/components/creation_tile.svelte';
   import { creations } from '$lib/data/creations.js';
+  import Markdown from '$lib/data/asd.svx';
 
   onMount(() => import('iconify-icon'));
 
@@ -45,17 +46,18 @@
 
 <section class="px-4 md:px-10">
   <section class="bg-[#E2DECE] px-4 py-6 shadow-[5px_5px_rgba(196,_186,_168,_0.4),_10px_10px_rgba(196,_186,_168,_0.3),_15px_15px_rgba(196,_186,_168,_0.2),_20px_20px_rgba(196,_186,_168,_0.1),_25px_25px_rgba(196,_186,_168,_0.05)]">
-    <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9] text-center md:text-left">About</h1>
-    <p class="text-[clamp(1rem,6vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
+    <h1 class="text-[clamp(2rem,12vw,6rem)] leading-[0.9] text-center md:text-left">About</h1>
+    <p class="text-[clamp(1rem,4vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
   </section>
 </section>
 
 <section class="px-4 md:px-10">
   <section class="bg-[#E2DECE] px-4 py-6 shadow-[5px_5px_rgba(196,_186,_168,_0.4),_10px_10px_rgba(196,_186,_168,_0.3),_15px_15px_rgba(196,_186,_168,_0.2),_20px_20px_rgba(196,_186,_168,_0.1),_25px_25px_rgba(196,_186,_168,_0.05)]">
-    <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9] text-center md:text-left">Creations</h1>
+    <h1 class="text-[clamp(2rem,12vw,6rem)] leading-[0.9] text-center md:text-left">Creations</h1>
+    <p class="text-[clamp(1rem,4vw,1.5rem)]">Here are some of the projects I have worked on.</p>
     <div class="flex flex-col gap-4">
       {#each creations as creation}
-        <CreationTile title={creation.title} description={creation.description} url={creation.url} status={creation.status}/>
+        <CreationTile creation={creation}/>
       {/each}
     </div>
   </section>
@@ -70,3 +72,5 @@
     </div>
   </div>
 </section>
+
+<Markdown />

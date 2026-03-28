@@ -26,6 +26,7 @@
     "@fontsource/jersey-10": "^5.2.8",
     "@tailwindcss/vite": "^4.2.1",
     "iconify-icon": "^3.0.2",
+    "mdsvex": "^0.12.7",
     "tailwindcss": "^4.2.1"
   },
   "pnpm": {
