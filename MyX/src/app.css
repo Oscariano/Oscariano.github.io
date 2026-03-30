@@ -10,12 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-@layer base {
+/* @layer base {
   a {
     color: #4a90d9;
     text-decoration: underline;
   }
-}
+} */
 
 iconify-icon {
   display: inline-block;

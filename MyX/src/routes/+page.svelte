@@ -24,8 +24,11 @@
   
   <h1 class="absolute top-35 left-1/2 -translate-x-1/2 text-[clamp(4rem,35vw,24rem)] z-[-1] text-[#E3E5DF] leading-[0.8] md:left-10 md:-translate-x-0 md:top-20">Seattle,<br> WA</h1>
   
-  <h3 class="self-start text-[clamp(1rem,6vw,2rem)] mt-25">+1 (206) 694-9786</h3>
-  <h3 class="self-start text-[clamp(1rem,6vw,2rem)]">oscarsjs@uw.edu</h3>
+  <ul class="mt-25 flex flex-col self-start gap-2">
+    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="pixel:instagram"  style="color: #424242"></iconify-icon> <a href="https://www.instagram.com/0scar_song/" class="indent-2">Instagram</a></li>
+    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="streamline-pixel:logo-linkedin"  style="color: #424242"></iconify-icon> <a href="www.linkedin.com/in/oscarsjs" class="indent-2">LinkedIn</a></li>
+    <li class="flex items-center"><iconify-icon icon="streamline-pixel:logo-social-media-youtube" width="2em" height="2em"  style="color: #424242"></iconify-icon> <a href="https://www.youtube.com/@oscarsjs" class="indent-2">YouTube</a></li>
+  </ul>
   
   <img src="/ascii_me.svg" alt="Profile" class="absolute bottom-0 right-2 md:right-10 w-auto h-[clamp(10rem,65vh,70rem)] z-[-1] lg:w-90 lg:h-auto lg:top-45 lg:right-10">
   
@@ -37,25 +40,5 @@
 </section>
 
 <section class="px-4 md:px-10 text-center">
-  <h1 class="text-[clamp(2rem,12vw,6rem)] leading-[0.9] text-center md:text-left">About</h1>
   <p class="text-[clamp(1rem,4vw,1.5rem)]">I am a software engineer with a passion for building web applications. I am currently working at Google as a software engineer. I have a background in computer science and mathematics. I am a quick learner and I am always looking for new challenges.</p>
-</section>
-
-<section class="px-4 md:px-10">
-  <h1 class="text-[clamp(2rem,12vw,6rem)] leading-[0.9] text-center md:text-left">Creations</h1>
-  <div class="flex flex-col gap-4">
-    {#each creations as creation}
-      <CreationTile creation={creation}/>
-    {/each}
-  </div>
-</section>
-
-<section class="mt-10 bg-[#E2DECE] px-10 py-6">
-  <h1 class="text-[clamp(2rem,16vw,6rem)] leading-[0.9]">Blog</h1>
-  <div class="flex flex-col gap-4">
-    <div class="flex flex-col gap-2">
-      <h2 class="text-[clamp(1rem,6vw,1.5rem)]">Blog Post 1</h2>
-      <p class="text-[clamp(1rem,6vw,1.5rem)]">Description of blog post 1</p>
-    </div>
-  </div>
 </section>
