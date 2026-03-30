@@ -16,26 +16,29 @@
 </script>
 
 <div
-  class="bg-[#F5F2E6] flex flex-col items-center px-4 py-2 w-full"
+  class="bg-[#E8E4D5] shadow-[-36px_-36px_0px_-32px_#848484] flex flex-col items-center px-4 py-2 w-full"
 >
   <div class="flex justify-between items-center w-full">
     <h1 class="text-[clamp(1rem,6vw,2rem)]">{title}</h1>
-    {#if status == "In Progress"}
-      <p class="text-[clamp(1rem,4vw,2rem)] text-[#707070]">{status}</p>
-    {:else if status == "Archived"}
-      <p class="text-[clamp(1rem,4vw,2rem)] text-[#9D383A]">{status}</p>
-    {:else if status == "Active"}
-      <p class="text-[clamp(1rem,4vw,2rem)] text-[#559D38]">{status}</p>
-    {:else}
-      <p class="text-[clamp(1rem,4vw,2rem)] text-[#707070]">{status}</p>
-    {/if}
+    <div class="leading-none flex flex-col items-end">
+      {#if status == "In Progress"}
+        <p class="text-[clamp(1rem,4vw,2rem)] text-[#707070]">{status}</p>
+      {:else if status == "Archived"}
+        <p class="text-[clamp(1rem,4vw,2rem)] text-[#9D383A]">{status}</p>
+      {:else if status == "Active"}
+        <p class="text-[clamp(1rem,4vw,2rem)] text-[#559D38]">{status}</p>
+      {:else}
+        <p class="text-[clamp(1rem,4vw,2rem)] text-[#707070]">{status}</p>
+      {/if}
+      <p class="text-[clamp(1rem,4vw,1.5rem)] text-[#646464] self-end">Jan 2026 - now</p>
+    </div>
   </div>
   <div class="h-full overflow-hidden line-clamp-3">
     <p class="text-[clamp(1rem,4vw,1.5rem)] text-[#646464]">
       {description}
     </p>
   </div>
-  <div class="flex items-center w-full">
+  <div class="flex items-center self-end mt-4">
     <div class="bg-[#646464] h-full flex items-center p-1">
       <svg
         xmlns="http://www.w3.org/2000/svg"

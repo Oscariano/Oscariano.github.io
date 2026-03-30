@@ -24,10 +24,10 @@
   
   <h1 class="absolute top-35 left-1/2 -translate-x-1/2 text-[clamp(4rem,35vw,24rem)] z-[-1] text-[#E3E5DF] leading-[0.8] md:left-10 md:-translate-x-0 md:top-20">Seattle,<br> WA</h1>
   
-  <ul class="mt-25 flex flex-col self-start gap-2">
-    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="pixel:instagram"  style="color: #424242"></iconify-icon> <a href="https://www.instagram.com/0scar_song/" class="indent-2">Instagram</a></li>
-    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="streamline-pixel:logo-linkedin"  style="color: #424242"></iconify-icon> <a href="www.linkedin.com/in/oscarsjs" class="indent-2">LinkedIn</a></li>
-    <li class="flex items-center"><iconify-icon icon="streamline-pixel:logo-social-media-youtube" width="2em" height="2em"  style="color: #424242"></iconify-icon> <a href="https://www.youtube.com/@oscarsjs" class="indent-2">YouTube</a></li>
+  <ul class="mt-25 flex flex-col self-start gap-2 text-[#646464]">
+    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="pixel:instagram"  style="color: #646464"></iconify-icon> <a href="https://www.instagram.com/0scar_song/" class="indent-2">Instagram</a></li>
+    <li class="flex items-center"><iconify-icon width="2em" height="2em" icon="streamline-pixel:logo-linkedin"  style="color: #646464"></iconify-icon> <a href="www.linkedin.com/in/oscarsjs" class="indent-2">LinkedIn</a></li>
+    <li class="flex items-center"><iconify-icon icon="streamline-pixel:logo-social-media-youtube" width="2em" height="2em"  style="color: #646464"></iconify-icon> <a href="https://www.youtube.com/@oscarsjs" class="indent-2">YouTube</a></li>
   </ul>
   
   <img src="/ascii_me.svg" alt="Profile" class="absolute bottom-0 right-2 md:right-10 w-auto h-[clamp(10rem,65vh,70rem)] z-[-1] lg:w-90 lg:h-auto lg:top-45 lg:right-10">
