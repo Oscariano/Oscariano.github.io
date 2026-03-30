@@ -1,5 +1,6 @@
 <script>
   export let creation;
+  import Markdown from '$lib/data/valuables.svx';
 
   let title = creation.title;
   let description = creation.description;
@@ -7,6 +8,7 @@
   let status = creation.status;
   let imgUrl = creation.imgUrl;
   let imgAlt = creation.imgAlt;
+  let markdown = creation.markdown;
 
   let expanded = false;
 
@@ -66,7 +68,7 @@
     <div
       class="bg-[#f5f2e6] px-4 py-2 flex flex-col shadow-[0px_10px_0px_-4px_#00000024] border-t-4 border-[#ccc7b4] w-[96%]"
     >
-      {#if imgUrl != undefined && imgUrl != ""}
+      <!-- {#if imgUrl != undefined && imgUrl != ""}
         <div class="w-full max-h-max px-4 py-2 bg-[#fefefe]">
           <img src={imgUrl} alt={imgAlt} />
         </div>
@@ -96,7 +98,8 @@
             </div>
           </li>
         {/if}
-      </ul>
+      </ul> -->
+      <Markdown />
     </div>
   {/if}
 </div>

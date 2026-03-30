@@ -6,7 +6,9 @@ const dirname = path.resolve(fileURLToPath(import.meta.url), "../");
 
 const config = {
   extensions: [".md", ".svx"],
-  layout: {}
+  layout: {
+    creation_listing: path.resolve(dirname, "")
+  }
 };
 
 export default config;

@@ -1,0 +1,5 @@
+![Map with pins of lost items](/valuables.png)
+
+Valuables is a location-based lost-and-found platform designed to connect item owners with finders through an intuitive visual map interface. By anchoring discovery to specific locations, Valuables makes it easier to report found items, search for lost belongings, and coordinate safe item returns.
+
+We used [Supabase](https://supabase.com/) to store backend data as well as enabling live chat with Supabase Realtime feature

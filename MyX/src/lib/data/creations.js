@@ -5,7 +5,8 @@ export const creations = [
     url: "https://github.com/Oscariano/valuables",
     imgUrl: "/valuables.png",
     imgAlt: "Screenshots of map and report lost item interface",
-    status: "Active"
+    status: "Active",
+    markdown: "$lib/data/valuables.svx"
   },
   {
     title: "Gradient AI",
