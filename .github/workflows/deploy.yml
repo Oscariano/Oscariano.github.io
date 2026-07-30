@@ -15,6 +15,7 @@ jobs:
     defaults:
       run:
         working-directory: MyX
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,12 +28,12 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22 # Recommended LTS version
           cache: 'pnpm'
           cache-dependency-path: MyX/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --prefix MyX
+        run: pnpm install
 
       - name: Build
         run: pnpm run build
