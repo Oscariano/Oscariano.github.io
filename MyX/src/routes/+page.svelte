@@ -30,7 +30,7 @@
     Seattle,<br /> WA
   </h1>
 
-  <ul class="mt-25 flex flex-col self-start gap-2 text-[#646464]">
+  <ul class="mt-25 flex flex-col self-start gap-2 text-[#646464] text-2xl">
     <li>
       <a
         href="https://www.instagram.com/0scar_song/"
@@ -46,7 +46,7 @@
       </a>
     </li>
     <li class="flex items-center">
-      <a href="www.linkedin.com/in/oscarsjs" class="indent-2 flex items-center">
+      <a href="https://www.linkedin.com/in/oscarsjs/" class="indent-2 flex items-center">
         <iconify-icon
           width="1em"
           height="1em"
@@ -58,7 +58,7 @@
     </li>
     <li class="flex items-center">
       <a
-        href="https://www.youtube.com/@oscarsjs"
+        href="https://www.youtube.com/@oscariano42"
         class="indent-2 flex items-center"
       >
         <iconify-icon
@@ -108,8 +108,8 @@
   </div>
   <div class="mt-5 flex gap-5 pb-10">
     <p class="mt-5">
-      Welcome to my personal website. Here you will find my
-      projects and things that I am currently working on.
+      Welcome to my website. Here you will find my
+      projects, things that I am currently working on, and some thoughts.
     </p>
     <img src="/loopstation.png" alt="Loopstation button" class="h-30 saturate-0 opacity-60">
   </div>
