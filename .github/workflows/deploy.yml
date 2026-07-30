@@ -32,7 +32,7 @@ jobs:
           cache-dependency-path: MyX/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --prefix MyX
 
       - name: Build
         run: pnpm run build
