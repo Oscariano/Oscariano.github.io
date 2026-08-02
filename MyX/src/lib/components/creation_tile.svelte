@@ -9,12 +9,14 @@
 
   let title = $derived(creation.title);
   let description = $derived(creation.description);
+  let img_url = $derived(creation.img_url);
+  let img_alt = $derived(creation.img_alt);
   let status = $derived(creation.status);
+  let github = $derived(creation.github);
   let slug = $derived(slugify(creation.title));
+  let link = $derived(creation.link)
+  let time = $derived(creation.time)
 
-  function handleClick() {
-    console.log('button clicked!')
-  }
 </script>
  
 <div
@@ -35,7 +37,7 @@
     {/if}
   </div>
   
-  <img src="/valuables.png" alt="valuables" class="aspect-16/9 object-cover">
+  <img src={img_url} alt={img_alt} class="aspect-16/9 object-cover">
 
   <p>
     {description}
@@ -44,13 +46,17 @@
   <hr class="w-full h-0.5 border-0 bg-[#D6D3C5]">
 
   <div class="w-full flex justify-end gap-2">
-    <Button icon="pixelarticons:link" text="Visit" onclick={handleClick}/>
-    <Button icon="pixelarticons:git-branch" text="Source" onclick={handleClick}/>
+    {#if link}
+    <Button icon="pixelarticons:link" text="Visit" link={link}/>
+    {/if}
+    {#if github}
+    <Button icon="pixelarticons:git-branch" text="Source" link={github}/>
+    {/if}
   </div>
 
   <div class="w-full flex justify-center bg-[#D6D3C5]">
     <p class="text-[#95938B]">
-      Jan 26 - Now
+      {time}
     </p>
   </div>
 </div>
