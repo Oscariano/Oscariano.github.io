@@ -2,12 +2,12 @@
   let {
     text = "Click me",
     icon = "lucide:simile",
-    link
+    link,
   } = $props();
 </script>
 
-<a class="flex items-stretch bg-[#FFFFFF] w-fit overflow-hidden text-[1.5rem]" href={link} target="_blank">
-    <div class="bg-[#424242] shrink-0 aspect-square flex justify-center items-center p-[0.2em]">
+<a class="flex items-stretch bg-[#FFFFFF] w-fit overflow-hidden" href={link} target="_blank">
+    <div class="bg-[#424242] shrink-0 h-full aspect-square flex justify-center items-center p-[0.2em]">
         {#if icon}
             <iconify-icon
                 width="1em"

@@ -1,7 +1,6 @@
 <script>
   import Button from "./button.svelte";
   import { onMount } from "svelte";
-  import { slugify } from "$lib/utils/slug.js";
 
   onMount(() => import("iconify-icon"));
 
@@ -11,9 +10,8 @@
   let description = $derived(creation.description);
   let img_url = $derived(creation.img_url);
   let img_alt = $derived(creation.img_alt);
-  let status = $derived(creation.status);
   let github = $derived(creation.github);
-  let slug = $derived(slugify(creation.title));
+  let markdown = $derived(creation.markdown);
   let link = $derived(creation.link)
   let time = $derived(creation.time)
 
@@ -26,15 +24,22 @@
     <h1 class="text-4xl">
       {title} 
     </h1>
-    {#if status == "In Progress"}
-      <h2 class="text-[clamp(1.3rem,4vw,2rem)] text-[#707070]">{status}</h2>
-    {:else if status == "Archived"}
-      <h2 class="text-[clamp(1.3rem,4vw,2rem)] text-[#9D383A]">{status}</h2>
-    {:else if status == "Active"}
-      <h2 class="text-[clamp(1.3rem,4vw,2rem)] text-[#559D38]">{status}</h2>
-    {:else}
-      <h2 class="text-[clamp(1.3rem,4vw,2rem)] text-[#707070]">{status}</h2>
+    {#if markdown}  
+    <a class="bg-[#424242] p-1 aspect-square flex justify-center items-center" href={markdown} title="markdown-page">
+      <iconify-icon
+          width="1em"
+          height="1em"
+          icon={"pixelarticons:article"}
+          style="color: #FFFFFF"
+          class="text-2xl"
+      ></iconify-icon>
+    </a>
     {/if}
+  </div>
+  <div class="w-full flex justify-center bg-[#D6D3C5]">
+    <p class="text-[#95938B]">
+      {time}
+    </p>
   </div>
   
   <img src={img_url} alt={img_alt} class="aspect-16/9 object-cover">
@@ -45,18 +50,12 @@
   
   <hr class="w-full h-0.5 border-0 bg-[#D6D3C5]">
 
-  <div class="w-full flex justify-end gap-2">
+  <div class="w-full flex justify-end gap-2 text-[1.5rem]">
     {#if link}
     <Button icon="pixelarticons:link" text="Visit" link={link}/>
     {/if}
     {#if github}
     <Button icon="pixelarticons:git-branch" text="Source" link={github}/>
     {/if}
-  </div>
-
-  <div class="w-full flex justify-center bg-[#D6D3C5]">
-    <p class="text-[#95938B]">
-      {time}
-    </p>
   </div>
 </div>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fontsource/jersey-10";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-jersey: "Jersey 10", sans-serif;

@@ -1,5 +1,29 @@
+# The Making of Valuables App
+
+
+August 2, 2026 <br>
+[GitHub Repository](https://github.com/chan-anni/valuables) &nbsp; [Project Slide Deck](https://canva.link/skqn3l8rkvzr2vz)
+
+Valuables is a location-based lost-and-found platform that connects item owners with finders via an intuitive visual map interface. By anchoring discovery to specific locations, Valuables makes it easier to report found items, search for lost belongings, and coordinate the safe return of items.
+
 ![Map with pins of lost items](/valuables.png)
 
-Valuables is a location-based lost-and-found platform designed to connect item owners with finders through an intuitive visual map interface. By anchoring discovery to specific locations, Valuables makes it easier to report found items, search for lost belongings, and coordinate safe item returns.
+It all started as a project for my CSE 403 (Software Engineering) class in Winter 2026, when we had ten weeks to learn and build any software idea we had while applying SWE principles and working in teams.
 
-We used [Supabase](https://supabase.com/) to store backend data as well as enabling live chat with Supabase Realtime feature
+After we reached an agreement on the idea, we had two options for this project: build it as a web application — as we were more familiar with the tool stack — or as a mobile application. We chose the latter for the reason of learning more and exploring different tools.
+
+Therefore, we used [Supabase](https://supabase.com/) to store backend data as well as enabling live chat with the Supabase Realtime feature, as we decided to use the [Flutter](https://flutter.dev/) framework to build the mobile app because we learned that it is better for cross-platform compatibility and clear documentation (had to give this up to Google).
+
+Throughout the journey, we found that learning about Flutter and Supabase was, in fact, the easiest part, in contrast to what we thought. The hardest part of making Valuables was rigidly following the workflow we learned; making concise commit messages and pull requests, thoroughly reviewing our colleagues' code, and writing tests that fulfill functional and content coverage (it was pretty fun, surprisingly, as if it gave an extra approval on our code).
+
+Thanks to Annika, Sam, and Bimal, we were able to launch v1 at the end of the quarter, with some of the features that we promised working, yet others pushed back for the future. It was a fun project to work with, and I have definitely learned a lot about the SWE Lifecycle and tool stack, such as Supabase and Flutter.
+
+# The Other Side of Valuables
+
+This is the part where TV doesn’t show you.
+
+Alongside CSE 403, I was also taking a class called Software Entrepreneurship. Being totally honest, I felt most of the entrepreneurship class focus and reinforce too much on theoretical concepts rather than application of even analysis of other cases. That is why I enjoyed ENTRE 370 (Introduction to Entrepreneurship) more than the latter classes I took. Whatever, those are off-topic.
+
+So I went up on a journey of investigating the business potential of the Lost and Found market. The result? I surveyed 100+ students from Local Point and Odegaard, conducted an interview with the Husky Union Building manager (because they are the Lost and Found center of the whole campus), and researched about competitors (found this company called [Boomerang](https://thanksboomerang.com/) that was super hidden but doing pretty well). In the end, I turned down the idea because Valuables is a B2C software, and there are barely any reason why someone would use a Lost and Found app so frequently, plus it is unclear how we can monetize such a service. It involved more complex regulations regarding having other people’s belongings, determining the real owner, and possibly reselling for abandoned items.
+
+Anyways, it was a learning experience.
