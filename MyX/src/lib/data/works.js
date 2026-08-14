@@ -1,4 +1,4 @@
-export const creations = [
+export const works = [
   {
     title: "Valuables App",
     description: "Valuables is a location-based lost-and-found platform designed to connect item owners with finders through an intuitive visual map interface. By anchoring discovery to specific locations, Valuables makes it easier to report found items, search for lost belongings, and coordinate safe item returns.",
@@ -7,7 +7,7 @@ export const creations = [
     img_url: "/valuables.png",
     img_alt: "Screenshots of map and report lost item interface",
     status: "Archived",
-    markdown: "/works/valuables-app",
+    markdown: "/valuables-app",
     time: "Jan 5 - Mar 13, 2026 (Archived)"
   },
   {
@@ -21,7 +21,7 @@ export const creations = [
   },
   {
     title: "This Website",
-    description: "My personal website hosted on GitHub Pages, made with Svelte, TypeScript, and a lot of heart",
+    description: "My personal website hosted on GitHub Pages, made with Svelte, TypeScript, and some secret ingredients",
     url: "https://oscariano.github.io",
     status: "Active",
     time: "Mar 9, 2026 - ???"

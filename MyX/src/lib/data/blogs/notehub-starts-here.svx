@@ -1,0 +1,9 @@
+# Notesheet Sharing platform 
+_August 14, 2026_
+
+I am not sure how to call it yet, maybe Notehub is to cliche.
+
+The idea is that it will be a platform for folks to share their cheatsheets, and what inspired me is my friends asking me for my previous exam cheatsheets to know what I have written down. Therefore, it will be great if there is a repository for everyone to share their notes.
+
+## Tech Stack
+For now, I have started the [GitHub Repo](https://github.com/Oscariano/uw-notesheet-sharing) and I am using Django, Supabase, and React. It will be a fun learning experience. I just setup the project and connected Django to Supabase SQL and bucket, which I have never done before. The database will save the metadata stuff, and the bucket will store the images of the notesheets. 

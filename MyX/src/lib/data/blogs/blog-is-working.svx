@@ -1,0 +1,4 @@
+# Welcome
+
+Today is August 14, 2026. I have finally made this page work, been procrastinating it.
+Anyways, this is made with [Svelte](https://svelte.dev/), pretty cool. Also, every article is written with _Markdown_ because I can.

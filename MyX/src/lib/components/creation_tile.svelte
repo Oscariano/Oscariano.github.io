@@ -11,7 +11,7 @@
   let img_url = $derived(creation.img_url);
   let img_alt = $derived(creation.img_alt);
   let github = $derived(creation.github);
-  let markdown = $derived(creation.markdown);
+  let markdown = $derived("/work".concat(creation.markdown));
   let link = $derived(creation.link)
   let time = $derived(creation.time)
 

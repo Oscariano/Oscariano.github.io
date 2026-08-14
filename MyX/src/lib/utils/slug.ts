@@ -1,4 +1,4 @@
-export function slugify(title) {
+export function slugify(title:String) {
   return String(title)
     .toLowerCase()
     .trim()
