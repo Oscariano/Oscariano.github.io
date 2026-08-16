@@ -63,7 +63,7 @@
 
     {#if markdownComponent}
       {@const Markdown = markdownComponent}
-      <article class="prose prose-sm max-w-none prose-p:my-4 prose-headings:my-4 prose-ul:my-1 prose-li:my-0 prose-headings:text-[#424242] prose-a:text-[#424242] text-[#565656] text-[clamp(1.25rem,4vw,1.5rem)] mt-4">
+      <article class="prose prose-ul:list-[square] prose-sm max-w-none prose-p:my-4 prose-headings:my-4 prose-ul:my-1 prose-li:my-0 prose-headings:text-[#424242] prose-a:text-[#424242] text-[#565656] text-[clamp(1.25rem,4vw,1.5rem)] mt-4">
         <Markdown />
       </article>
     {/if}

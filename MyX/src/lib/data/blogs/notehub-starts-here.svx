@@ -1,9 +1,17 @@
-# Notesheet Sharing platform 
+# Notesheet Sharing Platform 
 _August 14, 2026_
 
-I am not sure how to call it yet, maybe Notehub is to cliche.
+I am not sure how to call it yet; maybe Notehub is too cliché.
 
-The idea is that it will be a platform for folks to share their cheatsheets, and what inspired me is my friends asking me for my previous exam cheatsheets to know what I have written down. Therefore, it will be great if there is a repository for everyone to share their notes.
+The idea is that it will be a platform for folks to share their cheat sheets, and what inspired me is my friends asking me for my previous exam cheat sheets to know what I have written down. Therefore, it will be great if there is a repository for everyone to share their notes. The journey begins now, and we will see where it goes.
 
 ## Tech Stack
-For now, I have started the [GitHub Repo](https://github.com/Oscariano/uw-notesheet-sharing) and I am using Django, Supabase, and React. It will be a fun learning experience. I just setup the project and connected Django to Supabase SQL and bucket, which I have never done before. The database will save the metadata stuff, and the bucket will store the images of the notesheets. 
+For now, I have started the [GitHub Repo](https://github.com/Oscariano/uw-notesheet-sharing), and I am using Django, Supabase, and React. It will be a fun learning experience. I just set up the project and connected Django to Supabase SQL and bucket <sup>1</sup>, which I have never done before. The database will save the metadata stuff, and the bucket will store the images of the notesheets.
+
+## User Interface
+Well, although I am coding most of the project to learn, we do need to follow the trend and allow our experts to give us a hand in the project. So, I got v0 design me an initial home page from scratch, and I will be taking inspiration from this.
+
+![v0 designing the interface](/notehub_interface_v0.png)
+
+## Resources:
+1. [Integrating Supabase with Django: A Comprehensive Guide](https://kimxons.github.io/posts/integrate-supabase-with-django/)
