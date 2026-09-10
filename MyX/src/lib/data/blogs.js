@@ -11,4 +11,10 @@ export const blogs = [
     markdown: "/notehub-starts-here",
     published_date: "August 14, 2026"
   },
+  {
+    title: "Notehub TS",
+    icon: "pixelarticons:notes",
+    markdown: "/notehub-ts",
+    published_date: "September 10, 2026"
+  },
 ]

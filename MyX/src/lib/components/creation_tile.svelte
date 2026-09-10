@@ -24,7 +24,7 @@
     <h1 class="text-4xl">
       {title} 
     </h1>
-    {#if markdown}  
+    {#if creation.markdown}  
     <a class="bg-[#424242] p-1 aspect-square flex justify-center items-center" href={markdown} title="markdown-page">
       <iconify-icon
           width="1em"

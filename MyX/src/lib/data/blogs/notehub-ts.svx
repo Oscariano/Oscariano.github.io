@@ -1,0 +1,17 @@
+# Notehub TS
+_September 10, 2026_
+
+Continued a little more on the note sheet sharing website today.
+
+In the process of adding icons to the website, a error regarding jsx popped up: "JSX syntax is disabled and should be enabled via the parser options." This happened because I was using [unplugin-icons](https://github.com/unplugin/unplugin-icons), and even though I followed their configuration, it still showed the error. So, I tried to migrate the whole project to use TypeScript instead since it is still in early stage. Well, that's quite a lot of boring work, so, I kindly asked Cursor to change all the .js to .ts along side with other JS related configurations.
+![unplugin icons react configurations](/unplugin-icons-setup.png) Now, our project is TS!
+
+_Some time later..._
+
+Damn, picking a font is hard. For now, I have landed at [Truculenta](https://fonts.google.com/specimen/Truculenta?stylecount=9&categoryFilters=Feeling:%2FExpressive%2FPlayful&preview.script=Latn) to give the site a playful and relaxed vibe.
+
+> Why am I building this? I mean, there is a need for looking for note sheets used in exams, but who would deliberately post their note sheet on this platform? Unless I think about any incentive.
+
+![Notehub interface making process](/notehub_interface_process.png)
+After spending a day doing the basic UI, I decided to move on to some _simple_ Backend stuff. Well, I am overwhelmed on how to design the models and serializers, so, I will leave it to another day.
+Here is a documentation on how to get bucket data using python: https://supabase.com/docs/reference/python/storage-from-list

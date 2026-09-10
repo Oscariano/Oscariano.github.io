@@ -1,5 +1,4 @@
 <script>
-  import "../app.css";
   import { onMount } from "svelte";
   import NavBar from "$lib/components/nav_bar.svelte";
 
@@ -46,6 +45,20 @@
       </a>
     </li>
     <li class="flex items-center">
+      <a
+        href="https://www.youtube.com/@oscariano42"
+        class="indent-2 flex items-center"
+      >
+        <iconify-icon
+          icon="streamline-pixel:logo-social-media-youtube"
+          width="1em"
+          height="1em"
+          style="color: #646464"
+        ></iconify-icon>
+        YouTube
+      </a>
+    </li>
+    <li class="flex items-center">
       <a href="https://www.linkedin.com/in/oscarsjs/" class="indent-2 flex items-center">
         <iconify-icon
           width="1em"
@@ -58,16 +71,16 @@
     </li>
     <li class="flex items-center">
       <a
-        href="https://www.youtube.com/@oscariano42"
+        href="https://docs.google.com/document/d/1hm10t5I1jPhJfqldAqy2wIUKMqvOLrJihYelIOWnM9I/edit?usp=sharing"
         class="indent-2 flex items-center"
       >
         <iconify-icon
-          icon="streamline-pixel:logo-social-media-youtube"
+          icon="streamline-pixel:content-files-note"
           width="1em"
           height="1em"
           style="color: #646464"
         ></iconify-icon>
-        YouTube
+        Resume
       </a>
     </li>
   </ul>
@@ -97,10 +110,10 @@
   </div>
 </section>
 
-<section class="px-4 md:px-10 h-50 text-[#505050]">
+<section class="px-4 md:px-10 h-50 text-[#505050] text-lg">
   <div class="flex gap-5">
     <img src="/laptop.png" alt="Pixel art laptop" class="h-30 saturate-0 opacity-50">
-    <p class="text-[clamp(1rem,4vw,1.5rem)]">
+    <p>
       I study Computer Science and minor in Entrepreneurship at Univerity of
       Washington. I play Loopstation and Beatbox for fun, and I like Soccer, Video
       Games, and Movies. 

@@ -12,7 +12,7 @@ export function load({ params }) {
   const work = works.find((c) => slugify(c.title) === params.slug);
 
   if (!work) {
-    throw error(404, `work "${params.slug}" not found`);
+    throw error(404, `Work "${params.slug}" not found`);
   }
 
   return { work };

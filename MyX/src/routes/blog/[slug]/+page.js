@@ -12,7 +12,7 @@ export function load({ params }) {
   const blog = blogs.find((c) => slugify(c.title) === params.slug);
 
   if (!blog) {
-    throw error(404, `blog "${params.slug}" not found`);
+    throw error(404, `Blog "${params.slug}" not found`);
   }
 
   return { blog };
