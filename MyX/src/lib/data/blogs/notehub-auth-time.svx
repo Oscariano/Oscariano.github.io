@@ -1,0 +1,8 @@
+# Learning Auth
+_September 14, 2026_
+
+User authentication has been, for me, that complicated concept that everyone leaves aside and hoping to one day come back, sit down, and learn all at once; and today was my day. I didn't tell myself to learn it all in one go, but I did start digging into it as it became part of my job to make the authentication feature behind HuskyFetch. Moreover, I think the even-better reason was implementing auth for Notehub.
+
+So, how does the authentication for Notehub work now? I am using Knox, which is a package add-on to the ordinary Django REST Framework (DRF) token authentication method that allows more control over the tokens. That is for login and session tracking on the server side, and it works perfectly now. Next, I had to face a little entanglement from protecting the web app's pages with required login. 
+
+_Let it be clear that I didn't fully understand it yet, so bear with me for this part_. I attempted putting the views within the `login_required()` function, but it seems to work only for Server-Side Rendering (SSR) cases. What I would need in order to redirect users to the login page is some combination of React Router and `useContext` functions, and that is what I am watching and learning now.

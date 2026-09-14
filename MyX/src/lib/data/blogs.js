@@ -13,8 +13,20 @@ export const blogs = [
   },
   {
     title: "Notehub TS",
-    icon: "pixelarticons:notes",
+    icon: "pixelarticons:script",
     markdown: "/notehub-ts",
     published_date: "September 10, 2026"
+  },
+  {
+    title: "Linkedin Drama",
+    icon: "pixelarticons:linkedin-2",
+    markdown: "/linkedin-drama",
+    published_date: "September 11, 2026"
+  },
+  {
+    title: "Notehub - Auth Time",
+    icon: "pixelarticons:user",
+    markdown: "/notehub-auth-time",
+    published_date: "September 14, 2026"
   },
 ]
