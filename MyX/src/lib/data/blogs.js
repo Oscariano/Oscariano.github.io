@@ -29,4 +29,10 @@ export const blogs = [
     markdown: "/notehub-auth-time",
     published_date: "September 14, 2026"
   },
+  {
+    title: "Notehub - Routing Hell",
+    icon: "pixelarticons:fire",
+    markdown: "/notehub-routing-hell",
+    published_date: "September 15, 2026"
+  }
 ]

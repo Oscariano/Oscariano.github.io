@@ -1,0 +1,16 @@
+# One More Reason That Working Without Understanding Causes Trouble
+_September 15, 2026_
+
+After so much time spent into the Django app, I realized that my understanding about its arquitecture was wrong. I have been using Vite to serve the React frontend, and I thought Django was the one responsible for routing the different apps within the project this whole time. 
+
+However, it seems that most people usually use Django for creating REST APIs, and they would host a decoupled application with React routing on the client-side the different pages. I guess now I understand the difference between Client-Server and Model View Controller (MVC) software arquitecture.
+
+## What Happened Then
+
+I had to do one of those big maneuvers again on the repository to refact the code and switch from Django urls routing (which is used along with templates for SSR applications from my understanding) to use [React Router](https://reactrouter.com/home). It took couple of minutes, but thankfully I only had to do it once.
+
+## Updates
+
+After that, I continued the job with the authentication and successfully created routes that are protected by login. So, bad news for those of you who doesn't have an account. 
+
+![Protected Routes code](/auth-code.png)
